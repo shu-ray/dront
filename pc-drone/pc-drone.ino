@@ -15,7 +15,7 @@ char pass[] = "adira2000";       // Set password to "" for open networks.
 int thumbstickX = 0;
 int thumbstickY = 0;
 
-// Execute only when V1 changes
+// Execute only when V1 virtual pin changes
 BLYNK_WRITE(V1) {
   thumbstickX = param[0].asInt();
   thumbstickY = param[1].asInt();
